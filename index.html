@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Đăng Ký</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Biểu Mẫu Đăng Ký Thông Tin</h2>
+        <form action="#" method="post">
+            <!-- Tên -->
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Ngày tháng năm sinh -->
+            <label for="dob">Ngày tháng năm sinh:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Quê quán -->
+            <label for="hometown">Quê quán:</label>
+            <input type="text" id="hometown" name="hometown" required>
+
+            <!-- Số điện thoại -->
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="VD: 0987654321">
+
+            <!-- Học vấn -->
+            <label for="education">Học vấn:</label>
+            <select id="education" name="education" required>
+                <option value="thpt">Cấp 3</option>
+                <option value="dai_hoc">Đại học</option>
+                <option value="cao_dang">Cao đẳng</option>
+                <option value="thac_sy">Thạc sĩ</option>
+                <option value="tien_sy">Tiến sĩ</option>
+            </select>
+
+            <!-- Sở thích -->
+            <label for="hobbies">Sở thích:</label>
+            <textarea id="hobbies" name="hobbies" rows="4" placeholder="Nhập sở thích của bạn..." required></textarea>
+
+            <!-- Công việc mong muốn trong tương lai -->
+            <label for="future-job">Công việc mong muốn trong tương lai:</label>
+            <input type="text" id="future-job" name="future-job" required>
+
+            <!-- Nút gửi -->
+            <button type="submit">Gửi Thông Tin</button>
+        </form>
+    </div>
+
+</body>
+</html>
